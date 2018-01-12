@@ -1,0 +1,13 @@
+h2:hover, img:hover {
+    color: #2ea6c1;
+    cursor: pointer;
+}
+
+div {
+    display: block;
+    padding: 0 0 0 0;
+}
+
+div p {
+    margin-left: 30px;
+}
