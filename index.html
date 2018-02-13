@@ -1,101 +1,115 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <link href="style.css" rel="stylesheet" media="all">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ivan Kuzmin</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css" />
+	<script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
 </head>
 <body>
-<img src="Foto.png">
-<h2 >Мои данные</h2>
-<div>
-    <ul>
-        <li>Кузьмин Иван Сергеевич, 22 года</li>
-        <li>Место проживания: Москва</li>
-        <li>Телефон: +7 (926) 097-34-66</li>
-        <li>Email: vania_kuzmin@mail.ru</li>
-    </ul>
-</div>
-<h2>Образование</h2>
-<div>
-    <ul>
-        <span><b>2012-наст. вр.</b></span>
-        <li>МГТУ им. Н.Э. Баумана:
-            <br>2-ой курс магистратуры (окончание в 2018 г.)</li>
-        <li>Факультет: Энергетическое машиностроение</li>
-        <li>Кафедра: Теплофизика и ядерная энергетика</li>
-        <li>Тема диплома: «Применение инженерных методов при расчете
-            <br>характеристик реактивных сопел»</li>
-    </ul>
-    <ul>
-        <span><b>2015 г.</b></span>
-        <li>Практика в Институте Космических Исследований РАН
-            <br>(работа с конструкторской документацией)</li>
-    </ul>
-    <ul>
-        <span><b>2016-2018 г.</b></span>
-        <li>Практика и дипломная работа в Центральном Аэрогидродинамическом
-            <br>Институте им. Н.Е. Жуковского</li>
-    </ul>
-</div>
-<h2>Опыт работы</h2>
-<div>
-    <ul>
-        <span><b>07.15-11.15 г.</b></span>
-        <li>Институт Космических Исследований РАН</li>
-        <li>Должность: инженер-теплофизик</li>
-        <ul><li>Работа с тепловыми расчетами</li></ul>
-    </ul>
-    <ul>
-        <span><b>09.16-01.18</b></span>
-        <li>АО ГНПП “Регион”</li>
-        <li>Должность: инженер</li>
-        <ul>
-            <li>Работа с конструкторской документацией</li>
-            <li>Разработка программы для автоматизированного планирования и
-                <br>контроля выполнения проектов предприятия</li>
-            <li>Работа с номенклатурой</li>
-            <li>Планирование проектов</li>
-        </ul>
-    </ul>
-</div>
-<h2>Профессиональные навыки и знания</h2>
-<div>
-    <ul>
-        <li>Английский (Intermediate)</li>
-        <li>Немецкий язык – A1 (начальный уровень)</li>
-        <li>Python, VBA</li>
-        <li>HTML/CSS, JavaScript</li>
-    </ul>
-</div>
-<h2>Курсы повышения квалификации</h2>
-<div>
-    <ul>
-        <li>Управление проектами на основе стандарта ANSI PMI PMBok v.5</li>
-        <li>Управление командой проекта</li>
-        <li>Построение и развитие проектного офиса (PMO)</li>
-        <li>Практика оформления, учета и правовой защиты<br>
-        результатов интеллектуальной деятельности</li>
-    </ul>
-</div>
-<h2>Профессиональные интересы</h2>
-<div>
-    <p>Очень нравится направление web-разработки. Самостоятельно занимаюсь изучением js, html/css.<br>
-    Хочу связать свою жизнь с IT-сферой и работать на международном уровне.</p>
-</div>
-<h2>Хобби и увлечения</h2>
-<div>
-    <p>Люблю книги про работу человеческой памяти и мозга, занимаюсь спортом.</p>
-</div>
-<script src="jquery.min.js"></script>
-<script>
-    $(function(){
-        $('h2').click(function(){
-            $(this).next('div').children().slideToggle();
-        });
-        $('img').click(function(){
-            $('div').children().show('slow');
-        });
-    });
-</script>
+
+	<section class="hero is-dark">
+		<div class="hero-body">
+			<div class="columns">
+				<div class="card column is-2 is-offset-1">
+					<div class="card-image">
+						<figure class="image is-3by4">
+							<img src="Foto1.jpg" alt="Placeholder image">
+						</figure>
+					</div>
+				</div>
+				<div class="column">
+					<h1 class="title">
+						Kuzmin Ivan Sergeevich
+					</h1>
+					<h2 class="subtitle">
+						<ul>
+							<li>Address: Moscow</li>
+							<li>Phone: +7 926 097 34 66</li>
+							<li>Email: vania_kuzmin@mail.ru</li>
+						</ul>
+					</h2>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="container">
+			<div class="columns">
+			  	<div class="column is-offset-1 content">
+					<h2 class="title has-text-weight-semibold">Education</h2>
+					<ul>
+						<li>2012-until now
+							<ul>
+								<li class="has-text-weight-bold">Bauman Moscow State Technical University</li>
+								<li>Faculty: Energy Engineering</li>
+								<li>Department: Thermal Physics and Nuclear Power</li>
+								<li>Thesis: «Use of engineering methods for calculating the characteristics of jet nozzles»</li>
+							</ul>
+						</li>
+						<li>2015 y.
+							<ul>
+								<li>Student practice in the <span class="has-text-weight-bold">Space Research Institute RAS</span> (work with design documentation)</li>
+							</ul>
+						</li>
+						<li>2016-2018 y.
+							<ul>
+								<li>Student practice and bachelor thesis in the <span class="has-text-weight-bold">Central Aerohydrodynamic Institute named by N.E. Zhukovsky</span></li>
+							</ul>
+						</li>
+					</ul>
+					<h2 class="title has-text-weight-semibold">Work experience</h2>
+					<ul>
+						<li>07.15-11.15 y.
+							<ul>
+								<li class="has-text-weight-bold">Space Research Institute RAS</li>
+								<li>Position: engineer-thermal physicist
+									<ul>
+										<li>Work with thermal calculations</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li>09.16-01.18 y.
+							<ul>
+								<li class="has-text-weight-bold">JSC SSPE «Region»</li>
+								<li>Position: engineer
+									<ul>
+										<li>Work with design documentation</li>
+										<li>The development of a program for automatic planning and monitoring the implementation of projects of the enterprise</li>
+										<li>Work with the items</li>
+										<li>Project management</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li>Now
+							<ul>
+								<li><a href="https://heisen.me">Heisen Project</a></li>
+							</ul>
+						</li>
+					</ul>
+					<h2 class="title has-text-weight-semibold">Professional skills and knowledge</h2>
+					<ul>
+						<li>English – intermediate</li>
+						<li>German – A1 (beginner)</li>
+						<li>Python, HTML/CSS, JavaScript, Elasticsearch</li>
+					</ul>
+					<h2 class="title has-text-weight-semibold">Qualifications</h2>
+					<ul>
+						<li>Project management based on the standard ANSI PMI PMBok v.5</li>
+						<li>Project team management</li>
+						<li>Construction and development of the project office (PMO)</li>
+						<li>Practice of registration, accounting and legal protection results of intellectual activity</li>
+					</ul>
+					<h2 class="title has-text-weight-semibold">Hobbies</h2>
+					<p>I am interested the direction of web development. Love books about the human brain and memory, sport.</p>
+				</div>
+			</div>
+		</div>
+	</section>
 </body>
 </html>
