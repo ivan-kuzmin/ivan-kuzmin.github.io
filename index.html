@@ -9,15 +9,48 @@
 	<script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
 </head>
 <body>
+	<style media="screen">
+		a {
+			color: darkblue;
+		}
+		a:hover {
+			color: blue;
+			text-decoration: underline;
+		}
+		.no-screen {
+			display: none !important;
+		}
+	</style>
 	<style media="print">
 		body {
-			font-size: 10px;
+			font-size: 8px;
 		}
 		.section {
-			padding: 1rem 1rem;
+			padding: 0 1rem;
 		}
 		.no-print {
 			display: none !important;
+		}
+		h2 {
+			margin-bottom: 0.5rem !important;
+		}
+		.hero {
+			background: white !important;
+		}
+		.hero-body {
+			padding: 1rem 1.5rem 2rem;
+		}
+		.hero .title {
+			color: #4a4a4a !important;
+			font-size: 16px;
+			margin-bottom: 30px;
+		}
+		.hero .subtitle {
+			color: #4a4a4a !important;
+			font-size: 12px;
+		}
+		a {
+			color: #4a4a4a !important;
 		}
 	</style>
 
@@ -49,26 +82,28 @@
 
 	<section class="section">
 		<div class="container">
-			<div class="columns">
-			  	<div class="column is-offset-1 content">
+			<div class="columns is-centered">
+			  	<div class="column is-10 content">
 					<h2 class="title has-text-weight-semibold">Education</h2>
 					<ul>
 						<li>2012 - 2018
 							<ul>
-								<li class="has-text-weight-bold">Bauman Moscow State Technical University (Master)</li>
-								<li>Faculty: Energy Engineering</li>
-								<li>Department: Thermalphysics and Nuclear Power</li>
+								<li class="has-text-weight-bold">
+									<a href="https://en.wikipedia.org/wiki/Bauman_Moscow_State_Technical_University" target="_blanck">Bauman Moscow State Technical University</a> (Master)
+								</li>
+								<li>Faculty: Power Engineering</li>
+								<li>Department: Thermophysics</li>
 								<li><a href="https://github.com/ivan-kuzmin/Thesis" target="_blank">Thesis: «Engineering methods for calculating the characteristics of jet nozzles»</a></li>
 							</ul>
 						</li>
 						<li>2015
 							<ul>
-								<li>Work experience in the <span class="has-text-weight-bold">Space Research Institute RAS</span> (work with construction documentation)</li>
+								<li>Work experience in the <a href="https://en.wikipedia.org/wiki/Russian_Space_Research_Institute" target="_blanck" class="has-text-weight-bold">Space Research Institute RAS</a> (work with construction documentation)</li>
 							</ul>
 						</li>
 						<li>2016 - 2018
 							<ul>
-								<li>Work experience and master thesis in the <span class="has-text-weight-bold">Central Aerohydrodynamic Institute named by N.E. Zhukovsky</span></li>
+								<li>Work experience and master thesis in the <a href="https://en.wikipedia.org/wiki/Central_Aerohydrodynamic_Institute" target="_blanck" class="has-text-weight-bold">Central Aerohydrodynamic Institute named by N.E. Zhukovsky</a></li>
 							</ul>
 						</li>
 					</ul>
@@ -76,7 +111,9 @@
 					<ul>
 						<li>07.15 - 11.15
 							<ul>
-								<li class="has-text-weight-bold">Space Research Institute RAS</li>
+								<li class="has-text-weight-bold">
+									<a href="https://en.wikipedia.org/wiki/Russian_Space_Research_Institute" target="_blanck">Space Research Institute RAS</a>
+								</li>
 								<li>Position: Engineer-Thermal Physicist
 									<ul>
 										<li>Work with thermal calculations</li>
@@ -86,7 +123,9 @@
 						</li>
 						<li>09.16 - 01.18
 							<ul>
-								<li class="has-text-weight-bold">JSC SSPE «Region»</li>
+								<li class="has-text-weight-bold">
+									<a href="https://en.wikipedia.org/wiki/Tactical_Missiles_Corporation" target="_blanck">«Region» SSPE</a>
+								</li>
 								<li>Position: Engineer
 									<ul>
 										<li>Work with construction documentation</li>
@@ -98,54 +137,90 @@
 						</li>
 						<li>05.18 – Now
 							<ul>
-								<li><a href="https://www.skoltech.ru" target="_blank">Skolkovo Institute of Science and Technology</a></li>
+								<li class="has-text-weight-bold">
+									<a href="https://www.skoltech.ru/en/" target="_blank">Skolkovo Institute of Science and Technology</a>
+								</li>
 								<li>Position: Junior Frontend Developer
-									<ul class="no-print">
-										<li><a href="http://tensorfield.ml" target="_blank">TensorField</a></li>
-										<li><a href="http://139.59.155.13:5000/example1-ru" target="_blank">Heath4Tooth</a></li>
-										<li><a href="http://www.deeptensor.ml" target="_blank">DeepTensor</a></li>
+									<ul>
+										<li><a href="http://tensorfield.ml" target="_blank">TensorField</a><span class="no-screen"> – http://tensorfield.ml</span></li>
+										<li>Heath4Tooth</li>
+										<li><a href="http://www.deeptensor.ml" target="_blank">DeepTensor</a><span class="no-screen"> – http://www.deeptensor.ml</span></li>
+										<li><a href="https://ivan-kuzmin.github.io/esports-platform/#/home" target="_blank">Skoltech-ESports</a><span class="no-screen"> – https://ivan-kuzmin.github.io/esports-platform/</span></li>
 									</ul>
 								</li>
 							</ul>
 						</li>
-						<li class="no-print"><a href="https://github.com/ivan-kuzmin/FoodCourt" target="_blank">FoodCourt</a> (React Native)
-							<ul>
-								<img src="FoodCourt.gif" alt="FoodCourt.gif">
-							</ul>
-						</li>
-						<li class="no-print"><a href="" id="RockScissorsPaper" style="pointer-events: none; cursor: default; text-decoration: none; color: black;">Rock Scissors Paper classificator</a>
-							<ul>
-								<img src="RockScissorsPaper.gif" alt="RockScissorsPaper.gif">
-							</ul>
-						</li>
 					</ul>
+					<h2 class="title has-text-weight-semibold">Other projects</h2>
+					<ul class="no-screen">
+						<li>FoodCourt (React Native) – https://github.com/ivan-kuzmin/FoodCourt/</li>
+						<li>Simple p5.js WebGL Example – https://ivan-kuzmin.github.io/p5-webgl-example/</li>
+					</ul>
+					<div class="columns no-print">
+						<div class="column is-one-third">
+							<li><a href="https://github.com/ivan-kuzmin/FoodCourt/" target="_blank">FoodCourt</a> (React Native)
+								<ul class="no-print">
+									<img src="FoodCourt.gif" alt="FoodCourt.gif" style="height: 50vh;">
+								</ul>
+							</li>
+						</div>
+						<div class="column is-one-third">
+							<li class="no-print">
+								Rock Scissors Paper classificator
+								<ul>
+									<img src="RockScissorsPaper.gif" alt="RockScissorsPaper.gif" style="height: 50vh;">
+								</ul>
+							</li>
+						</div>
+						<!-- <div class="column is-one-third">
+							
+						</div> -->
+					</div>
+					<li class="no-print">
+						<a href="https://ivan-kuzmin.github.io/p5-webgl-example/" target="_blank">Simple p5.js WebGL Example</a>
+					</li>
 					<h2 class="title has-text-weight-semibold">Professional skills and knowledge</h2>
-					<ul>
-						<li>English – intermediate</li>
-						<li>HTML/CSS/JS (Grid, Flexbox, jQuery, ES6)</li>
-						<li>Git</li>
-						<li>React, React Native</li>
-						<li>NodeJS, Yarn/npm</li>
-						<li>CSS Frameworks (Bootstrap, Bulma, Skeleton), Sass/SCSS</li>
-						<li>Styled-components</li>
-						<li>Eslint/Prettier</li>
-						<li>Jekyll</li>
-						<li>Docker</li>
-						<li>Nginx</li>
-						<li>Elasticsearch/Kibana</li>
-						<li>Python, Flask/Jinja</li>
-						<li>Djando, Django Rest Framework</li>
-					</ul>
-					<h2 class="title has-text-weight-semibold">Future plans</h2>
-					<ul>
-						<li>Webpack</li>
-						<li>Unit Testing</li>
-						<li>Redux</li>
-						<li>Machine Learning</li>
-						<li>TensorFlow</li>
-						<li>Swift (IOS Development)</li>
-						<li>Unity</li>
-					</ul>
+					<div class="columns">
+						<div class="column">
+							<h4 class="subtitle has-text-weight-semibold is-marginless">Frontend</h4>
+							<ul>
+								<li>HTML/CSS/JS (Grid, Flexbox, jQuery, ES6)</li>
+								<li>Git</li>
+								<li>React, React Native</li>
+								<li>Redux, Redux Thunk</li>
+								<li>Webpack</li>
+								<li>p5.js, Canvas Drawing</li>
+								<li>NodeJS, Yarn/npm</li>
+								<li>CSS Frameworks (Material UI, Bootstrap, Bulma, Skeleton), Sass/SCSS</li>
+								<li>Styled-components</li>
+								<li>Eslint/Prettier</li>
+								<li>Jekyll</li>
+							</ul>
+						</div>
+						<div class="column">
+							<h4 class="subtitle has-text-weight-semibold is-marginless">Other</h4>
+							<ul>
+								<li>English – intermediate</li>
+								<li>Docker</li>
+								<li>Python, Flask, Django, Django Rest Framework</li>
+								<li>Google Firebase</li>
+								<li>Nginx</li>
+								<li>Elasticsearch/Kibana</li>
+							</ul>
+						</div>
+						<div class="column">
+							<h4 class="subtitle has-text-weight-semibold is-marginless">Future plans</h4>
+							<ul>
+								<li>Typescript</li>
+								<li>Three.js, WebGL, 3D computer graphics in a web browser</li>
+								<li>Vue JS</li>
+								<li>Unit Testing</li>
+								<li>Swift (IOS Development)</li>
+								<li>Unity</li>
+								<li>Machine Learning, TensorFlow</li>
+							</ul>
+						</div>
+					</div>
 					<h2 class="title has-text-weight-semibold">Qualifications</h2>
 					<ul>
 						<li>Project management based on the standard ANSI PMI PMBoK v.5</li>
@@ -153,8 +228,6 @@
 						<li>Construction and development of the project office (PMO)</li>
 						<li>Practice of registration, accounting and legal protection results of intellectual activity</li>
 					</ul>
-					<h2 class="title has-text-weight-semibold">Hobbies</h2>
-					<p>I am interested in the direction of web development. I like to read books about the human brain and memory.</p>
 				</div>
 			</div>
 		</div>
