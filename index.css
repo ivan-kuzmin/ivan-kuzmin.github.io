@@ -103,6 +103,22 @@ ul {
   columns: 2;
 }
 
+.print-button {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  opacity: 0.2;
+  transition: opacity 0.2s;
+  padding: 1rem;
+  box-sizing: content-box;
+}
+
+.print-button:hover {
+  opacity: 0.3;
+}
+
 @media (max-width: 760px) {
   html {
     font-size: 12px;
@@ -116,6 +132,13 @@ ul {
   .description__content_mercuryo {
     grid-template-columns: 1fr;
   }
+
+  .print-button {
+    top: auto;
+    bottom: 0;
+    width: 2rem;
+    height: 2rem;
+  }
 }
 
 @media print {
@@ -128,4 +151,14 @@ ul {
   .description__content_mercuryo {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .print-button {
+    display: none;
+  }
+}
+
+@page {
+  size: auto;
+  size: A4;
+  margin: 12mm 10mm;
 }
