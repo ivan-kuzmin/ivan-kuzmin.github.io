@@ -1,5 +1,8 @@
 * {
   font-family: 'Raleway', sans-serif;
+  -webkit-print-color-adjust: exact !important;   /* Chrome, Safari 6 – 15.3, Edge */
+  color-adjust: exact !important;                 /* Firefox 48 – 96 */
+  print-color-adjust: exact !important;           /* Firefox 97+, Safari 15.4+ */
 }
 
 a:hover {
@@ -52,12 +55,11 @@ ul {
 
 .divider {
   height: 1px;
-  background: #000;
-  opacity: 0.4;
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .divider_gray {
-  opacity: 0.15;
+  background: rgba(0, 0, 0, 0.15);
 }
 
 .content {
@@ -117,6 +119,13 @@ ul {
 
 .print-button:hover {
   opacity: 0.3;
+}
+
+.experience-time {
+  color: gray;
+  padding-top: 4px;
+  display: block;
+  text-align: right;
 }
 
 @media (max-width: 760px) {

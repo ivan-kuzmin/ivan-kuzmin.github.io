@@ -31,7 +31,9 @@
     <div class="container__divider divider"></div>
     <div class="content">
       <div class="content__title">JOB EXPERIENCE</div>
-      <div class="content__divider divider divider_gray"></div>
+      <div class="content__divider divider divider_gray">
+        <small class="experience-time"><code id="year"></code><code id="month"></code></small>
+      </div>
 
       <div class="position">
         <b>Frontend Developer</b>
@@ -45,6 +47,7 @@
             <li>Projects planning</li>
             <li>Interviewing for new developers</li>
             <li>Developing web applications</li>
+            <li>Migrating to TS and other modern technologies</li>
             <li>Code reviewing and checking products quality</li>
             <li>Collaborating with other development teams</li>
             <li>Making and promotioning of new ideas</li>
@@ -136,6 +139,7 @@
             <li>HTML/CSS/JS (Grid, Flexbox, jQuery, ES6)</li>
             <li>NodeJS, yarn/npm</li>
             <li>Git</li>
+            <li>MobX</li>
             <li>p5.js, canvas drawing</li>
             <li>CSS Frameworks (Material UI, Bootstrap, Bulma, Tailwind), SASS/SCSS, Less</li>
             <li>Styled-components</li>
@@ -174,5 +178,25 @@
 
     </div>
   </div>
+
+  <script>
+    const start = new Date('2018-05-01');
+    const startY = start.getFullYear()
+    const startM = start.getMonth();
+    const end = new Date();
+    const endY = end.getFullYear();
+    const endM = end.getMonth();
+
+    let y = endY - startY;
+    let m = endM - startM;
+
+    if (m < 0) {
+      y -= 1;
+      m = 12 + m;
+    }
+
+    document.getElementById('year').innerText = `${y} year${y === 1 ? '' : 's'}`;
+    if (m) document.getElementById('month').innerText = ` ${m} month${m === 1 ? '' : 's'}`;
+  </script>
 </body>
 </html>
